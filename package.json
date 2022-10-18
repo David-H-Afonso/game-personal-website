@@ -1,6 +1,6 @@
 {
 	"name": "game-personal-website",
-	"homepage": "game.davidhormigafonso.com/",
+	"homepage": "https://game.davidhormigafonso.com",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
