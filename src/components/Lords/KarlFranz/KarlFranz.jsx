@@ -1,0 +1,21 @@
+import image from './image.png'
+import army from './army.png'
+import map from './map.png'
+import CampaignBase from '../../CampaingBase/containers/CampaignBase'
+
+const KarlFranzComponent = () => {
+	return <CampaignBase lord={KarlFranz} />
+}
+
+export const KarlFranz = {
+	name: 'Karl',
+	surname: 'Franz',
+	race: 'The Empire',
+	faction: 'Reikland',
+	startingZone: 'Altdorf',
+	image: image,
+	army: army,
+	map: map,
+}
+
+export default KarlFranzComponent
