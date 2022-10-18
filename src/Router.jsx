@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Lords } from './components/Lords'
 
 import KarlFranzComponent from './components/Lords/KarlFranz/KarlFranz'
 import Home from './components/Home/containers/Home'
