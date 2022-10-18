@@ -1,6 +1,7 @@
 import image from './image.png'
 import army from './army.png'
 import map from './map.png'
+import { races } from '../../elements/races/races'
 import CampaignBase from '../../CampaingBase/containers/CampaignBase'
 
 const KarlFranzComponent = () => {
@@ -10,7 +11,7 @@ const KarlFranzComponent = () => {
 export const KarlFranz = {
 	name: 'Karl',
 	surname: 'Franz',
-	race: 'The Empire',
+	race: races.theEmpire,
 	faction: 'Reikland',
 	startingZone: 'Altdorf',
 	image: image,
