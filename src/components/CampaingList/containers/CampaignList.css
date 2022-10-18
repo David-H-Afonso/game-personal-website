@@ -1,0 +1,44 @@
+@keyframes pulsate {
+	100% {
+		box-shadow: 0 0 5px red, 0 0 10px rgb(175, 31, 31), 0 0 15px #fe1313;
+	}
+
+	0% {
+		box-shadow: 0 0 2px red, 0 0 5px rgb(175, 31, 31), 0 0 7px #fe1313;
+	}
+}
+
+.List {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	width: 20%;
+	margin: 20px;
+	border-radius: 2rem;
+}
+
+.Lord {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	max-width: 300px;
+	padding-top: 10px;
+	font-family: 'Lusitana', serif;
+}
+
+.Lord > img {
+	max-width: 150px;
+}
+
+.Lord > p {
+	display: block;
+	color: black;
+	font-size: 1.5rem;
+}

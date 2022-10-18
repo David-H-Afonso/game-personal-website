@@ -1,3 +1,13 @@
 import { KarlFranz } from './KarlFranz/KarlFranz'
 
-export const Lords = [KarlFranz]
+export const Lords = [
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+	KarlFranz,
+]
