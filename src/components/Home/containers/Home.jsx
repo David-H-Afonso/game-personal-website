@@ -1,25 +1,37 @@
-import React from 'react'
+import logo from './logo.svg'
 import './Home.css'
 
-const Home = (props) => {
+import { experimental_use as use, Suspense, useState, useEffect } from 'react'
+
+const pokeapiFetch = fetch('https://pokeapi.co/api/v2/pokemon/ditto').then(async (res) => ({
+	data: await res.json(),
+}))
+
+const PokeApi = () => {
+	const response = use(pokeapiFetch)
+	const pokemon = response.data
+
+	return <p style={{ textTransform: 'capitalize' }}>{pokemon.name}</p>
+}
+
+function App() {
 	return (
-		<div class='background'>
-			<a href='/campaigns'>
-				<img
-					alt='backgroundImage'
-					class='warhammerLogo'
-					src='https://cdn.sega.co.uk/whstore/public/content/media/images/alpha/wh3-logo.png?VersionId=ldwBp3FPk8fPLe5tLBHT5RlXW9efT6R_'
-				/>
-			</a>
-			<div class='images'>
-				<img src='https://i.imgur.com/OtVTfRj.png' alt='karlFranz' />
-				<img
-					src='https://i.pinimg.com/originals/50/24/2a/50242a3edf83a51f95d9029c5b19fcf2.png'
-					alt='ikkitClaw'
-				/>
-			</div>
+		<div className='App'>
+			<header className='App-header'>
+				<img src={logo} className='App-logo' alt='logo' />
+				<Suspense>
+					<PokeApi />
+				</Suspense>
+				<a
+					className='App-link'
+					href='https://reactjs.org'
+					target='_blank'
+					rel='noopener noreferrer'>
+					Learn React
+				</a>
+			</header>
 		</div>
 	)
 }
 
-export default Home
+export default App

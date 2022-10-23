@@ -1,34 +1,38 @@
-.background {
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
 	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	background-image: url('https://content.totalwar.com/total-war/com.totalwar.www2019/uploads/2021/11/02111956/TWWH3_OgreKingdoms_Screenshot01.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
-.warhammerLogo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	max-width: 600px;
+.App-link {
+	color: #61dafb;
 }
 
-.images {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	align-items: baseline;
-	justify-content: space-between;
-}
-
-.images > img {
-	width: 50%;
-	max-width: 590px;
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
